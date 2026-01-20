@@ -16,7 +16,7 @@ public class BookingController {
     @Autowired
     private BookingService bookingService;
 
-    @PostMapping
+    @PostMapping("/create/booking")
     public ResponseEntity<BookingDto> createBooking(@RequestBody BookingRequest request) {
         BookingDto booking = bookingService.createBooking(request.getUserId(), request.getSeatId());
         return ResponseEntity.ok(booking);
