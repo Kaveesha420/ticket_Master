@@ -15,11 +15,7 @@ public class AuditLog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String action;
-
-    @ManyToOne
-    @JoinColumn(name = "user_Id",nullable = false)
     private Long userId;
-
     private String details;
     private LocalDateTime timestamp;
 }
