@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+
 @Entity
 public class Booking {
 
@@ -34,4 +35,3 @@ public class Booking {
     private LocalDateTime bookingTime;
 }
 
-enum BookingStatus{CONFIRMED,CANCELLED}
