@@ -27,4 +27,3 @@ public class Seat {
     private LocalDateTime holdExpiry;
 }
 
-enum SeatStatus { AVAILABLE, HELD, SOLD }

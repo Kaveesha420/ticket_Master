@@ -14,8 +14,8 @@ public class User {
     private Long id;
     private String name;
     private String email;
-    @Enumerated(EnumType.STRING)
-    private Usertier tier;
 
+    @Enumerated(EnumType.STRING)
+    private UserTier tier;
 }
-    enum Usertier{REGULAR, VIP, PLATINUM}
+
