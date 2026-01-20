@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Optional;
 
-public interface SeatRepository extends JpaRepository<Long, Seat> {
+public interface SeatRepository extends JpaRepository<Seat,Long> {
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("SELECT s FROM Seat s WHERE s.id = :id")
     Optional<Seat> findByIdWithLock(@Param("id") Long id);
